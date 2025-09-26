@@ -1,0 +1,34 @@
+<h2 style="color: #c54a2c; margin-bottom: 20px;">📋 Booking Update</h2>
+
+<p style="color: #333; font-size: 16px;">Hi {{GUEST_NAME}},</p>
+
+<p style="color: #333; font-size: 16px;">We wanted to let you know that your booking request for <strong>{{CLASS_TITLE}}</strong> has been declined by the instructor.</p>
+
+<div style="background-color: #f8f9f6; border-left: 4px solid #c54a2c; padding: 20px; margin: 20px 0; border-radius: 5px;">
+    <h3 style="color: #8b3a1a; margin: 0 0 15px 0;">Booking Details</h3>
+    <p style="margin: 5px 0; color: #333;"><strong>🏫 Class:</strong> {{CLASS_TITLE}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>👩‍🏫 Instructor:</strong> {{INSTRUCTOR_NAME}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>📅 Date:</strong> {{CLASS_DATE}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>👥 Students:</strong> {{STUDENT_COUNT}} ({{STUDENT_NAMES}})</p>
+    {{#HOST_MESSAGE}}
+    <p style="margin: 5px 0; color: #333;"><strong>💬 Message from Instructor:</strong> {{HOST_MESSAGE}}</p>
+    {{/HOST_MESSAGE}}
+</div>
+
+<div style="background-color: #fff3cd; padding: 15px; margin: 20px 0; border-radius: 5px; border: 1px solid #ffeaa7;">
+    <p style="margin: 0; color: #856404;"><strong>💳 Payment Status:</strong> No payment has been charged for this booking.</p>
+</div>
+
+<div style="background-color: #e8f5e8; padding: 20px; margin: 20px 0; border-radius: 5px;">
+    <h3 style="color: #3c4f21; margin: 0 0 10px 0;">What's Next?</h3>
+    <ul style="color: #333; margin: 0; padding-left: 20px;">
+        <li>Browse other available classes on HERD that might interest you.</li>
+        <li>Contact the instructor through HERD's messaging system if you have questions.</li>
+        <li>Consider trying different dates if the instructor offers similar classes.</li>
+        <li>Explore other instructors in your area who might offer similar topics.</li>
+    </ul>
+</div>
+
+<div style="text-align: center; margin-top: 30px;">
+    <a href="{{CLASSES_URL}}" style="display: inline-block; background-color: #556B2F; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">Browse Other Classes</a>
+</div>

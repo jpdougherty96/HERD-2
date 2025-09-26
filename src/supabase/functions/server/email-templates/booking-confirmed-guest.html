@@ -1,0 +1,29 @@
+<h2 style="color: #3c4f21; margin-bottom: 20px;">🎉 Booking Confirmed!</h2>
+
+<p style="color: #333; font-size: 16px;">Hi {{GUEST_NAME}},</p>
+
+<p style="color: #333; font-size: 16px;">Great news! Your booking has been confirmed for <strong>{{CLASS_TITLE}}</strong>!</p>
+
+<div style="background-color: #f8f9f6; border-left: 4px solid #556B2F; padding: 20px; margin: 20px 0; border-radius: 5px;">
+    <h3 style="color: #3c4f21; margin: 0 0 15px 0;">Your Booking Details</h3>
+    <p style="margin: 5px 0; color: #333;"><strong>🏫 Class:</strong> {{CLASS_TITLE}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>👩‍🏫 Instructor:</strong> {{INSTRUCTOR_NAME}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>📅 Date:</strong> {{CLASS_DATE}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>👥 Students:</strong> {{STUDENT_COUNT}} ({{STUDENT_NAMES}})</p>
+    <p style="margin: 5px 0; color: #333;"><strong>💳 Total Paid:</strong> ${{TOTAL_AMOUNT}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>📍 Location:</strong> {{CLASS_ADDRESS}}</p>
+</div>
+
+<div style="background-color: #e8f5e8; padding: 20px; margin: 20px 0; border-radius: 5px;">
+    <h3 style="color: #3c4f21; margin: 0 0 10px 0;">What's Next?</h3>
+    <ul style="color: #333; margin: 0; padding-left: 20px;">
+        <li>You'll receive any pre-class instructions from your instructor through HERD's messaging system.</li>
+        <li>Make sure to arrive on time and bring any required materials.</li>
+        <li>Contact your instructor through HERD if you have any questions.</li>
+        <li>We hope you have an amazing learning experience!</li>
+    </ul>
+</div>
+
+<div style="text-align: center; margin-top: 30px;">
+    <a href="{{DASHBOARD_URL}}" style="display: inline-block; background-color: #556B2F; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">View in Dashboard</a>
+</div>

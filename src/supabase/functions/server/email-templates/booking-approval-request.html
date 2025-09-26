@@ -1,0 +1,31 @@
+<h2 style="color: #3c4f21; margin-bottom: 20px;">📋 Booking Approval Required</h2>
+
+<p style="color: #333; font-size: 16px;">Hi {{HOST_NAME}},</p>
+
+<p style="color: #333; font-size: 16px;">You have a new booking request for your class <strong>{{CLASS_TITLE}}</strong> that requires your approval.</p>
+
+<div style="background-color: #f8f9f6; border-left: 4px solid #556B2F; padding: 20px; margin: 20px 0; border-radius: 5px;">
+    <h3 style="color: #3c4f21; margin: 0 0 15px 0;">Request Details</h3>
+    <p style="margin: 5px 0; color: #333;"><strong>👤 Guest:</strong> {{GUEST_NAME}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>👥 Students:</strong> {{STUDENT_COUNT}} ({{STUDENT_NAMES}})</p>
+    <p style="margin: 5px 0; color: #333;"><strong>📅 Class Date:</strong> {{CLASS_DATE}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>💰 Your Earnings:</strong> ${{HOST_EARNINGS}}</p>
+</div>
+
+<div style="background-color: #fff3cd; padding: 15px; margin: 20px 0; border-radius: 5px; border: 1px solid #ffeaa7;">
+    <p style="margin: 0; color: #856404;"><strong>⏰ Action Required:</strong> Please review and respond to this booking request. Payment will only be processed after your approval.</p>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+    <a href="{{APPROVE_URL}}" style="display: inline-block; background-color: #556B2F; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-right: 10px;">Approve Booking</a>
+    <a href="{{DECLINE_URL}}" style="display: inline-block; background-color: #dc3545; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">Decline Booking</a>
+</div>
+
+<div style="background-color: #e8f5e8; padding: 20px; margin: 20px 0; border-radius: 5px;">
+    <h3 style="color: #3c4f21; margin: 0 0 10px 0;">What Happens Next?</h3>
+    <ul style="color: #333; margin: 0; padding-left: 20px;">
+        <li><strong>If Approved:</strong> Payment will be processed and the student will be notified.</li>
+        <li><strong>If Declined:</strong> The student will be notified and no payment will be charged.</li>
+        <li>Use HERD's messaging system to contact the student with any questions or special instructions.</li>
+    </ul>
+</div>

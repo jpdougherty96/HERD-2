@@ -1,0 +1,28 @@
+<h2 style="color: #3c4f21; margin-bottom: 20px;">🎉 New Booking Received!</h2>
+
+<p style="color: #333; font-size: 16px;">Hi {{HOST_NAME}},</p>
+
+<p style="color: #333; font-size: 16px;">You have a new confirmed booking for your class <strong>{{CLASS_TITLE}}</strong>!</p>
+
+<div style="background-color: #f8f9f6; border-left: 4px solid #556B2F; padding: 20px; margin: 20px 0; border-radius: 5px;">
+    <h3 style="color: #3c4f21; margin: 0 0 15px 0;">Booking Details</h3>
+    <p style="margin: 5px 0; color: #333;"><strong>👤 Guest:</strong> {{GUEST_NAME}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>👥 Students:</strong> {{STUDENT_COUNT}} ({{STUDENT_NAMES}})</p>
+    <p style="margin: 5px 0; color: #333;"><strong>📅 Class Date:</strong> {{CLASS_DATE}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>💰 Your Earnings:</strong> ${{HOST_EARNINGS}}</p>
+    <p style="margin: 5px 0; color: #333;"><strong>💳 Payment:</strong> Processed Successfully</p>
+</div>
+
+<div style="background-color: #e8f5e8; padding: 20px; margin: 20px 0; border-radius: 5px;">
+    <h3 style="color: #3c4f21; margin: 0 0 10px 0;">Next Steps</h3>
+    <ul style="color: #333; margin: 0; padding-left: 20px;">
+        <li>The student has been notified and received their confirmation.</li>
+        <li>Payment has been processed and will be transferred to your account.</li>
+        <li>Use HERD's messaging system to contact the student with any pre-class instructions.</li>
+        <li>Send any class-specific preparation details or materials list.</li>
+    </ul>
+</div>
+
+<div style="text-align: center; margin-top: 30px;">
+    <a href="{{DASHBOARD_URL}}" style="display: inline-block; background-color: #556B2F; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">View in Dashboard</a>
+</div>
